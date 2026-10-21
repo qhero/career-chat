@@ -1,0 +1,17 @@
+<main>
+  <h1>Ask about my career</h1>
+  <section class="log" aria-live="polite">
+    @for (m of msgs(); track $index) {
+      <p [class]="m.role">{{ m.content }}</p>
+    }
+  </section>
+  @if (!msgs().length) {
+    <div class="chips">
+      @for (s of suggestions; track s) {
+        <button (click)="send(s)">{{ s }}</button>
+      }
+    </div>
+  }
+  <input #box aria-label="Your question" placeholder="Ask a question…" maxlength="1000"
+         [disabled]="busy()" (keydown.enter)="send(box.value); box.value = ''" />
+</main>

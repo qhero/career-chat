@@ -1,0 +1,8 @@
+main { max-width: 720px; margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; min-height: 100vh; box-sizing: border-box; font-family: system-ui, sans-serif; }
+.log { flex: 1; display: flex; flex-direction: column; gap: .5rem; }
+p { margin: 0; padding: .6rem .9rem; border-radius: 12px; max-width: 85%; white-space: pre-wrap; }
+.user { align-self: flex-end; background: #2563eb; color: #fff; }
+.assistant { align-self: flex-start; background: #e5e7eb; color: #111; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+button { padding: .5rem .8rem; border: 1px solid #2563eb; background: #fff; color: #2563eb; border-radius: 999px; cursor: pointer; }
+input { padding: .8rem; border: 1px solid #9ca3af; border-radius: 8px; font-size: 1rem; }
